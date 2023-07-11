@@ -10,3 +10,6 @@ tar -czf /tmp/valheim-${today:?undefined}.tar.zip /home/steam/.config/unity3d/Ir
 aws s3 cp /tmp/valheim-${today:?undefined}.tar.zip s3://${mys3bucket:?undefined}
 
 rm /tmp/valheim-${today:?undefined}.tar.zip
+
+printf "\nFiles now in S3:\n"
+aws s3 ls s3://${mys3bucket:?undefined}
