@@ -10,4 +10,4 @@ copy-to-s3.sh creates a zipped archive of the valheim worlds folder and uploads 
 
 the $mys3bucket variable is sourced from a file that needs to be created and added to this directory
 
-
+a cronjob is used to run the backup script nightly, logging the results in /var/log
