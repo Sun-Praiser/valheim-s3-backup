@@ -2,6 +2,7 @@
 
 printf "\n********** RUNNING BACKUP FOR $(date +%F) ***********\n"
 
+#run remove old files script
 bash ./remove-old.sh
 
 bash ./copy-to-s3.sh
