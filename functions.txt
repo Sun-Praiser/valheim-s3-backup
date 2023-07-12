@@ -1,0 +1,4 @@
+aws_ls ()
+{
+	        aws s3 ls s3://${mys3bucket:?undefined}
+	}
